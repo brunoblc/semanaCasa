@@ -1,72 +1,83 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f2f2f2;
-  }
-  
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.day {
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #fafafa;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: #555;
+}
+
+.activities {
+  list-style-type: none;
+  padding: 0;
+}
+
+.activities li {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 4px;
+  background-color: #e6e6e6;
+  transition: background-color 0.3s ease;
+}
+
+.activities li.completed {
+  color: #888888;
+  background-color: #d9edf7;
+}
+
+input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+button {
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  background-color: #3498db;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #217dbb;
+}
+
+@media screen and (max-width: 600px) {
   .container {
-    max-width: 800px;
-    margin: 20px auto;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
   }
-  
-  h1 {
-    text-align: center;
-    color: #333;
+
+  /* Adicione estilos para os botões na linha abaixo */
+  .day button {
+    display: block;
+    margin: 10px 5px /* Espaço entre os botões */
   }
-  
-  .day {
-    margin-bottom: 30px;
-    padding: 20px;
-    background-color: #fafafa;
-    border-radius: 8px;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  h2 {
-    color: #555;
-  }
-  
-  .activities {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .activities li {
-    margin-bottom: 10px;
-    padding: 10px;
-    border-radius: 4px;
-    background-color: #e6e6e6;
-    transition: background-color 0.3s ease;
-  }
-  
-  .activities li.completed {
-    color: #888888;
-    background-color: #d9edf7;
-  }
-  
-  input {
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    margin-right: 10px;
-  }
-  
-  button {
-    padding: 8px;
-    border: none;
-    border-radius: 4px;
-    background-color: #3498db;
-    color: #fff;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  button:hover {
-    background-color: #217dbb;
-  }
-  
+}

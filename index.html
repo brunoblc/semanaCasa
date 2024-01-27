@@ -3,6 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no">
   <link rel="stylesheet" href="styles.css">
   <title>Calendário e Rotina</title>
 </head>
@@ -31,7 +34,55 @@
       <p>Total de horas: <span id="totalHoursTuesday">0</span></p>
     </div>
 
-    <!-- Adicione os outros dias da semana aqui -->
+    <div class="day">
+      <h2>Quarta-feira</h2>
+      <ul id="Wednesday " class="activities"></ul>
+      <input type="text" id="activityInputWednesday " placeholder="Atividade">
+      <input type="number" id="hoursInputWednesday " placeholder="Horas">
+      <button onclick="addActivity('Wednesday ')">Adicionar</button>
+      <button onclick="resetDay('Wednesday ')">Reiniciar</button>
+      <p>Total de horas: <span id="totalHoursWednesday ">0</span></p>
+    </div>
+
+    <div class="day">
+      <h2>Quinta-feira</h2>
+      <ul id="Thursday" class="activities"></ul>
+      <input type="text" id="activityInputThursday" placeholder="Atividade">
+      <input type="number" id="hoursInputThursday" placeholder="Horas">
+      <button onclick="addActivity('Thursday')">Adicionar</button>
+      <button onclick="resetDay('Thursday')">Reiniciar</button>
+      <p>Total de horas: <span id="totalHoursThursday">0</span></p>
+    </div>
+
+    <div class="day">
+      <h2>Sexta-feira</h2>
+      <ul id="Friday" class="activities"></ul>
+      <input type="text" id="activityInputFriday" placeholder="Atividade">
+      <input type="number" id="hoursInputFriday" placeholder="Horas">
+      <button onclick="addActivity('Friday')">Adicionar</button>
+      <button onclick="resetDay('Friday')">Reiniciar</button>
+      <p>Total de horas: <span id="totalHoursFriday">0</span></p>
+    </div>
+
+    <div class="day">
+      <h2>Sábado</h2>
+      <ul id="Saturday" class="activities"></ul>
+      <input type="text" id="activityInputSaturday" placeholder="Atividade">
+      <input type="number" id="hoursInputSaturday" placeholder="Horas">
+      <button onclick="addActivity('Saturday')">Adicionar</button>
+      <button onclick="resetDay('Saturday')">Reiniciar</button>
+      <p>Total de horas: <span id="totalHoursSaturday">0</span></p>
+    </div>
+
+    <div class="day">
+      <h2>Domingo</h2>
+      <ul id="Sunday" class="activities"></ul>
+      <input type="text" id="activityInputSunday" placeholder="Atividade">
+      <input type="number" id="hoursInputSunday" placeholder="Horas">
+      <button onclick="addActivity('Sunday')">Adicionar</button>
+      <button onclick="resetDay('Sunday')">Reiniciar</button>
+      <p>Total de horas: <span id="totalHoursSunday">0</span></p>
+    </div>
 
   </div>
 
