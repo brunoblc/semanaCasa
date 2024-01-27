@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Calendário e Rotina</title>
+</head>
+<body>
+
+  <div id="app" class="container">
+    <h1>Minha Rotina Semanal</h1>
+
+    <div class="day">
+      <h2>Segunda-feira</h2>
+      <ul id="monday" class="activities"></ul>
+      <input type="text" id="activityInputMonday" placeholder="Atividade">
+      <input type="number" id="hoursInputMonday" placeholder="Horas">
+      <button onclick="addActivity('monday')">Adicionar</button>
+      <button onclick="resetDay('monday')">Reiniciar</button>
+      <p>Total de horas: <span id="totalHoursMonday">0</span></p>
+    </div>
+
+    <div class="day">
+      <h2>Terça-feira</h2>
+      <ul id="tuesday" class="activities"></ul>
+      <input type="text" id="activityInputTuesday" placeholder="Atividade">
+      <input type="number" id="hoursInputTuesday" placeholder="Horas">
+      <button onclick="addActivity('tuesday')">Adicionar</button>
+      <button onclick="resetDay('tuesday')">Reiniciar</button>
+      <p>Total de horas: <span id="totalHoursTuesday">0</span></p>
+    </div>
+
+    <!-- Adicione os outros dias da semana aqui -->
+
+  </div>
+
+  <!-- Adicione a seguinte seção ao final da estrutura HTML existente -->
+    <div class="day">
+    <h2>Despesas da Semana</h2>
+    <ul id="expenses" class="expenses"></ul>
+    <input type="text" id="expenseDescription" placeholder="Descrição da Despesa">
+    <input type="number" id="expenseAmount" placeholder="Valor (R$)">
+    <button onclick="addExpense()">Adicionar Despesa</button>
+    <button onclick="resetExpenses()">Reiniciar Despesas</button>
+    <p>Total de Despesas: <span id="totalExpenses">0</span> R$</p>
+  </div>
+  
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
